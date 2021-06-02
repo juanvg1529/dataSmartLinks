@@ -1,0 +1,117 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+
+  flex-wrap: wrap;
+  background: #e4ecf1;
+  max-width: 100%;
+}
+.Header {
+  display: flex;
+  width: 100%;
+  background: linear-gradient(white, #0b6da4);
+  height: 5rem;
+}
+.logo-header {
+  width: auto;
+
+  height: auto;
+}
+.header-title {
+  display: flex;
+  font-size: 100%;
+  align-items: center;
+  justify-content: center;
+  -webkit-text-stroke: 1px #0b6da4;
+  color: #e7f0f3;
+}
+/* card styles*/
+.card-container {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: linear-gradient(#cbcecf, #8ec5dd);
+  box-shadow: 3px 3px 7px 0px #0b6da4;
+  margin: 20px;
+}
+.logo {
+  width: 150px;
+  height: 130px;
+  background-color: rgba(230, 235, 235, 0.5);
+  border-radius: 3px;
+}
+.card-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  font-style: none;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 2px;
+}
+a:hover {
+  text-shadow: 2px 2px 6px #0b6da4;
+}
+/*space cards*/
+.SpaceCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth;
+  height: auto;
+  border: 1 px black;
+}
+.footer {
+  background: linear-gradient(#0b6da4, white);
+}
+.footer-1 h2 {
+  color: rgb(245, 245, 245, 0.6);
+}
+.link-footer {
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .header-title {
+    font-size: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+
+    font-size: 0.7rem;
+  }
+}
+
+/*Footer*/
+@media (min-width: 1000px) {
+  .footer {
+    background: linear-gradient(#0b6da4, white);
+    height: 12rem;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .SpaceCards {
+    height: 40rem;
+  }
+}
